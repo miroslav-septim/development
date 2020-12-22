@@ -7,18 +7,11 @@
     margin: 0;
   }
   
-.header {
-   display: flex;
-   padding: 60px;
-   text-align: center;
-   flex-direction: column;
-   background-color: gray;
-}
 
 .navbar {
   display: flex;
+  background-color: rgba(17, 12, 12, 1);
   justify-content: center;
-  background-color: rgb(17, 12, 12);
 }
 
 .navbar a {
@@ -41,7 +34,9 @@
 
 .fakeimg {
   background-color: #aaa;
-  width: 100%;
+  max-width: 100%;
+  width: 200px;
+  height: 100px;;
   padding: 20px;
 }
 
