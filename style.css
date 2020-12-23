@@ -7,6 +7,11 @@
     margin: 0;
   }
   
+.header {
+  padding: 20px;
+  background-image: ;
+  text-align: center;
+}
 
 .navbar {
   display: flex;
