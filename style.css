@@ -9,8 +9,10 @@
   
 .header {
   background-image: url(/images/keanu.png);
-  background-position: center;
-  padding: 200px;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size:auto;
+  padding: 100px;
 }
 
 .header h1 {
@@ -40,7 +42,7 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .fakeimg {
@@ -53,12 +55,12 @@
 .side {
   flex: 20%;
   background-color:gray;
-  padding: 20px;
+  padding: 10px;
 }
 
 .main {
   flex: 80%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer {
@@ -68,8 +70,11 @@
   width: 100%;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
   .row, .navbar {
     flex-direction: column;
+  }
+  .fakeimg {
+    max-width: 100%;
   }
 }
