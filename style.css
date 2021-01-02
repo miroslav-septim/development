@@ -4,6 +4,7 @@ html {
 
   *, *::before, *::after {
     box-sizing: inherit;
+    max-width: 100%;
   }
   
   body {
@@ -15,7 +16,7 @@ html {
   background-image: url(/images/keanu.png);
   background-position: 50% 40%;
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size:cover;
   padding: 100px;
 }
 
