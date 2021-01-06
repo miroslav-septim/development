@@ -15,7 +15,7 @@ html {
 
 .navbar {
   float: left;
-  padding: 25px;
+  padding-top: 3em;
 }
 
 .navbar a {
@@ -24,12 +24,12 @@ html {
   padding: 20px;
   font-weight: bold;
   list-style-type: none;
-
 }
 
-img {
+#logo {
   float: left;
-  padding: 10px;
+  padding: 20px;
+  width: 200px;
 }
 
 .navbar a:hover {
@@ -57,17 +57,41 @@ h1 {
   margin: 0;
 }
 
-button {
-  justify-content: center;
-  align-items: center;
+header > button {
+  position: relative;
+  bottom: 14em;
+  left: 47%;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+}
+
+header > button:hover {
+  color: green;
+  background-color: yellow;;
 }
 
 article {
+  display: flex;
+  flex-direction: column;
   flex: 250px;
   padding: 10px;
   margin: 10px;
   background: linear-gradient(125deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-  linear-gradient(275deg, rgba(225, 248, 18, 0.8), rgba(0,255,0,0) 70.71%);
+              linear-gradient(275deg, rgba(225, 248, 18, 0.8), rgba(0,255,0,0) 70.71%);
 }
 
+h2 {
+  text-align: center;
+  position: block;
+
+}
+
+article > img {
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+}
 
