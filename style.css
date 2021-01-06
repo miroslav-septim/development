@@ -14,11 +14,8 @@ html {
 
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  background-color: rgba(0, 0, 0, 0.7);
-
+  float: left;
+  padding: 25px;
 }
 
 .navbar a {
@@ -30,43 +27,47 @@ html {
 
 }
 
-.navbar img {
-  width: 4%;
-  height: 10%;
+img {
+  float: left;
+  padding: 10px;
 }
 
 .navbar a:hover {
-  background-color: rgb(112, 112, 112);
+  color: rgb(90, 245, 0);
 }
 
 section {
   display: flex;
+  flex-wrap: wrap;
 }
 
 header {
-  background: purple;
-  height: 100px;
+  background-image: linear-gradient(90deg, rgba(219, 0, 0, 0.5), rgba(0,255,0,0) 95.71%), 
+                    url(images/landscape1.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35em;
 }
 
 h1 {
   text-align: center;
   color: white;
-  line-height: 100px;
+  padding: 8em;
   margin: 0;
 }
 
+button {
+  justify-content: center;
+  align-items: center;
+}
+
 article {
-  flex: 1;
+  flex: 250px;
   padding: 10px;
   margin: 10px;
-  background: aqua;
+  background: linear-gradient(125deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(275deg, rgba(225, 248, 18, 0.8), rgba(0,255,0,0) 70.71%);
 }
 
-article:nth-of-type(2) {
-  flex: 2 100px;
-}
-
-article:nth-of-type(3) {
-  flex: 2 200px;
-}
 

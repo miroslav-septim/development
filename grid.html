@@ -10,14 +10,14 @@
         <style>
         body {
             width: 90%;
-            max-width: 900px;
+            max-width: auto;
             margin: 2em auto;
             font: .9em/1.2 Arial, Helvetica, sans-serif;
         }
 
         .container {
             display: grid;
-            grid-template-columns: repeat(12, minmax(0.1 fr));
+            grid-template-columns: repeat(12, minmax(1 fr));
             grid-gap: 20px;
         }
 
@@ -29,42 +29,50 @@
             border: 2px solid rgb(79,185,227);
         }
 
+        .navbar {
+            grid-column: 1 / 6;
+            grid-row: 1;
+        }
+
         aside {
             border-right: 1px solid #999;
         }
 
         header {
-            grid-column: 1 / 13;
-            grid-row: 1;
+            grid-column: 1 / 6;
+            grid-row: 2;
+            height: 300px;
         }
 
-        article {
-            grid-column: 4 / 13;
-            grid-row: 2;
+        .art1 {
+            grid-column: 4 / 6;
+            grid-row: 3;
         }
 
         aside {
-            grid-column: 1 / 4;
-            grid-row: 2;
+            grid-column: 1 / 2;
+            grid-row: 3;
         }
 
         footer {
-            grid-column: 1 / 13;
-            grid-row: 3;
+            grid-column: 1 / 6;
+            grid-row: 4;
         }
             </style>
 </head>
 <body>
 
-<!-- Navbar -->
+
+
+<div class="container">
+    <!-- Navbar -->
 <nav class="navbar">
     <a href="flexbox.html">Flexbox</a>
     <a href="grid.html">Grid</a>
 </nav>
 
-<div class="container">
     <header>This is my lovely blog</header>
-    <article>
+    <article class="art1">
             <h1>My article</h1>
             <p>Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
 
