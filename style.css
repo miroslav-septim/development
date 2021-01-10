@@ -48,24 +48,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 35em;
-}
-
-h1 {
-  text-align: center;
-  color: white;
-  padding: 8em;
-  margin: 0;
-}
-
-header > button {
-  position: relative;
-  bottom: 14em;
-  left: 47%;
-  background-color: green;
-  color: white;
-  border: none;
-  padding: 15px 32px;
-  font-size: 16px;
+  max-width: 100%;
 }
 
 header > button:hover {
@@ -73,7 +56,7 @@ header > button:hover {
   background-color: yellow;;
 }
 
-article {
+.featured {
   display: flex;
   flex-direction: column;
   flex: 250px;
@@ -83,15 +66,45 @@ article {
               linear-gradient(275deg, rgba(225, 248, 18, 0.8), rgba(0,255,0,0) 70.71%);
 }
 
-h2 {
+.featured > h2 {
   text-align: center;
   position: block;
 
 }
 
-article > img {
+.featured > img {
   align-items: center;
   justify-content: center;
-  height: 10em;
+  height: 6em;
 }
 
+.call-to-action {
+  display: flex;
+  flex-flow: column wrap;
+  overflow:hidden;
+  padding: 10px;
+  margin: 10px;
+  background: linear-gradient(125deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(275deg, rgba(225, 248, 18, 0.8), rgba(0,255,0,0) 70.71%),
+              url(images/wildlife.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.call-to-action > h2 {
+  margin: 0px;
+  text-align: center;
+  color: white;
+}
+
+.call-to-action > p {
+  color: white;;
+}
+
+.call-to-action > button {
+  padding: 10px;
+  color: white;
+  background-color: green;
+  border: none;
+}
