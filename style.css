@@ -62,8 +62,26 @@ header > button:hover {
   flex: 250px;
   padding: 10px;
   margin: 10px;
-  background: linear-gradient(125deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-              linear-gradient(275deg, rgba(225, 248, 18, 0.8), rgba(0,255,0,0) 70.71%);
+}
+
+.featured:nth-child(1) {
+  background: linear-gradient(125deg, rgba(55, 0, 255, 0.8), rgba(255,0,0,0) 100%),
+  linear-gradient(275deg, rgba(154, 154, 156, 0.8), rgba(0,255,0,0) 100%);
+}
+
+.featured:nth-child(2) {
+  background: linear-gradient(125deg, rgba(253, 1, 1, 0.8), rgba(255,0,0,0) 100%),
+  linear-gradient(275deg, rgba(255, 127, 127, 0.8), rgba(0,255,0,0) 100%);
+}
+
+.featured:nth-child(3) {
+  background: linear-gradient(275deg, rgba(0, 255, 13, 0.8), rgba(0,255,0,0) 100%),
+  linear-gradient(125deg, rgba(90, 192, 98, 0.8), rgba(255,0,0,0) 100%);
+}
+
+.featured:nth-child(4) {
+  background: linear-gradient(125deg, rgba(151, 115, 14, 0.8), rgba(255,0,0,0) 100%),
+  linear-gradient(275deg, rgba(190, 233, 0, 0.8), rgba(0,255,0,0) 100%);
 }
 
 .featured > h2 {
@@ -80,13 +98,16 @@ header > button:hover {
 
 .call-to-action {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  flex: 250px;
+  justify-content: space-around;
   overflow:hidden;
   padding: 10px;
   margin: 10px;
-  background: linear-gradient(125deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-              linear-gradient(275deg, rgba(225, 248, 18, 0.8), rgba(0,255,0,0) 70.71%),
-              url(images/wildlife.jpg);
+  background: linear-gradient(125deg, rgba(55, 0, 255, 0.8), rgba(255,0,0,0) 100%),
+              linear-gradient(125deg, rgba(253, 1, 1, 0.8), rgba(255,0,0,0) 75%),
+              linear-gradient(275deg, rgba(0, 255, 13, 0.8), rgba(0,255,0,0) 75%),
+              linear-gradient(125deg, rgba(151, 115, 14, 0.8), rgba(255,0,0,0) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -104,7 +125,42 @@ header > button:hover {
 
 .call-to-action > button {
   padding: 10px;
-  color: white;
-  background-color: green;
+  color: rgb(255, 255, 255);
+  background-color: rgba(75, 43, 151, 0.596);
   border: none;
+}
+
+.call-to-action > button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  
+  background: linear-gradient(125deg, rgba(110, 0, 0, 0.979), rgba(255,0,0,0) 100%),
+              linear-gradient(275deg, rgba(212, 0, 0, 0.8), rgba(0,255,0,0) 100%);
+  justify-content: space-between;
+}
+
+footer > h5 {
+    color: white;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.fa {
+  padding: 20px 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.32;
 }
